@@ -87,13 +87,13 @@ class TicTacToe
     end
   end
 
-def over?(board)
-  if(won?(board) || full?(board) || draw?(board))
-    true
-  else
-    false
+  def over?
+    if(won? || full? || draw?)
+      true
+    else
+      false
+    end
   end
-end
 
 def winner(board)
   win_combo = won?(board)
