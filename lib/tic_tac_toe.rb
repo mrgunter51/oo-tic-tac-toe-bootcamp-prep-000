@@ -77,9 +77,9 @@ class TicTacToe
     !@board.include? " "
   end
 
-  def draw?(board)
-    if(!won?(board))
-      if(full?(board))
+  def draw?
+    if(!won?)
+      if(full?)
         true
       end
     else
