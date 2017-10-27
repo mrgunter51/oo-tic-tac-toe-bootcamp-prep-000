@@ -77,15 +77,15 @@ class TicTacToe
     !@board.include? " "
   end
 
-def draw?(board)
-  if(!won?(board))
-    if(full?(board))
-      true
+  def draw?(board)
+    if(!won?(board))
+      if(full?(board))
+        true
+      end
+    else
+      false
     end
-  else
-    false
   end
-end
 
 def over?(board)
   if(won?(board) || full?(board) || draw?(board))
