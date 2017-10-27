@@ -50,8 +50,8 @@ class TicTacToe
     end
   end
 
-  def turn_count(board)
-    board.count("X") + board.count("O")
+  def turn_count
+    @board.count("X") + @board.count("O")
   end
 
 def current_player(board)
