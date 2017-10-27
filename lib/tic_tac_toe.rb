@@ -95,14 +95,14 @@ class TicTacToe
     end
   end
 
-def winner(board)
-  win_combo = won?(board)
-  if(win_combo == false)
-    nil
-  else
-    board[win_combo[0]]
+  def winner
+    win_combo = won?
+    if(win_combo == false)
+      nil
+    else
+      @board[win_combo[0]]
+    end
   end
-end
 
 def play(board)
   until(over?(board))
